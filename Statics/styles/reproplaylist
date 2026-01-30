@@ -1,0 +1,213 @@
+
+body{
+    margin: 0;
+    font-family: Bree_serif;
+    background-image: url("../img/playa\ original.png");
+    font-family: Bree_serif;
+}
+
+@font-face {
+    font-family: Bree_serif;
+    src: url('../fonts/Bree_serif/BreeSerif-Regular.ttf');
+}
+
+
+
+#grad{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#031ca6, #8f757534);
+    white-space: nowrap;
+    position: fixed;
+    width: 20%;
+    height: 94%;
+    top: 2%;
+    left: 1%;
+    border: white;
+    border-radius: 11%;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.main{
+    margin-top: 9em;
+}
+
+.header{
+    margin-left: 1rem;
+    display: flex;
+    position: sticky;
+    flex-wrap: nowrap;
+    color: white;
+    align-items: center;
+    max-height: 2cm;
+    font-size: larger;
+}
+
+.songSearch{
+    margin-left: 1rem;
+    border: 0.25rem solid black;
+    border-radius: 3rem;
+    padding: .5rem .5rem;
+    border-color: #ffffff;
+    height: 8%;
+}
+
+#search{
+    background-color: #00000000;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+#searchIcon{
+    max-width: 1.5rem;
+    height: auto;
+    color: #ffffff;
+}
+
+#searchIcon:hover{
+    cursor: pointer;
+}
+
+#submitSearch{
+    background-color: #00000000;
+    border: none;
+    max-width: 2rem;
+}
+
+#headerNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#headerUser{
+    display: flex;
+    background-color: #e13b96;
+    text-decoration: none;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+}
+#home{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#froggy{
+    margin-bottom: .2rem;
+    max-width: 2.5rem;
+    height: auto;
+}
+
+.topBarNav{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    font-size: large;
+}
+
+.navBar{
+    text-decoration: none;
+    color: white;
+}
+#site{
+    font-size: 27px;
+
+}
+#mainSection{
+    display: flex;
+    width: 1341px;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+#portada{
+    margin-left: 99px;
+    margin-top: 49px;
+    width: 799px;
+    height: 444px;
+    background-color: black;
+}
+#recSongs{
+    font-size: 32px;
+    margin-left: 690px;
+}
+
+#iconoHome {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+#barraInfe{
+        display: flex;
+    width:  90%;
+    align-items: center;
+    align-content: space-around;
+}
+#barraDes{
+    scrollbar-color:black;
+    scrollbar-width: thin;
+}
+#cancionInterfaz{
+    
+     margin-left: 400px;
+     width: 70%;
+     height: 90%;
+}
+
+.cent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+}
+
+.cent2{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    margin-right: 50rem;
+    overflow-y: inherit ;
+    overflow-x: hidden;
+}
+
+.botbut{
+    background-color: #00000000;
+    border: none;
+}
+
+#bsq{
+    border: none;
+    background-color: #00000000;
+    outline: none;
+    position: relative;
+    bottom: 2px;
+    font-size: 20px;
+}
+
+#result{
+    display: none;
+    max-height: 7rem;
+    width: 20%;
+    position: relative;
+    bottom: 150px;
+}
+
+.resbut{
+    background-color: #0000004f;
+    border: 3px, solid, grey;
+    text-align: center;
+    text-wrap: normal;
+    color: #ffffff;
+    border-radius: 10px;
+}

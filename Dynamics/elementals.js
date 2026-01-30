@@ -61,7 +61,7 @@ function onPlayerStateChange(event){
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player("player", {
-        videoId: "",
+        videoId: "M7lc1UVf-VE",
         playerVars: {
             controls: 0,
             modestbranding: 1,

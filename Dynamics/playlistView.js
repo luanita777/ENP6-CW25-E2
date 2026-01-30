@@ -6,7 +6,7 @@ let addSong = document.getElementById("addSong");
 let sear = document.getElementById("bsq");
 let date = new Date();
 date.setTime(date.getTime() + (24*60*60*1000));
-let maxAge = date.toUTCString;
+let maxAge = date.toUTCString();
 const galletas = document.cookie.split(";");
 let playlistActual;
 for (let cookie of galletas) {
@@ -82,15 +82,17 @@ function actualizarbarra(){
         section.className = "secSongs";
         section.id = `${playlist[i]}`;
         songName = bdcanciones[playlist[i]-1].nombre;
-        let item = document.createElement("a");
+
+        let item = document.createElement("button");
         item.className = "song";
-        item.href = ``;
         item.innerHTML = `${songName}`
+        item.dataset.link = bdcanciones[playlist[i]-1].link;
+
         let delBtn = document.createElement("button");
         delBtn.className = "delete";
         delBtn.innerHTML = "X";
-        section.innerHTML = item.outerHTML;
-        section.innerHTML += delBtn.outerHTML;
+        section.appendChild(item);
+        section.appendChild(delBtn);
         lista.appendChild(section);
     }
     /*En esta parte de la funcion creamos un boton para poder eliminar las canciones que ya no queremos
@@ -107,6 +109,28 @@ function actualizarbarra(){
             document.cookie = `${playlistActual}=; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
             document.cookie = `${playlistActual}=${playlist}; max-age=${maxAge}; path=/`;
             actualizarbarra();
+        });
+    });
+
+    let item = document.querySelectorAll(".song");
+        item.forEach((button, index) =>{
+            button.addEventListener("click", (e)=>{
+            e.stopPropagation();
+
+            songLink = button.dataset.link;
+
+            console.log(songLink);
+            
+            if(player && player.loadVideoById)
+                player.loadVideoById(songLink);
+                //const dur = player.getDuration()
+                //if (dur > 0) {
+                 //   duration = dur;
+                  //  seekBar.max = duration;
+                 //   clearInterval(esperarYActualizar);
+               // }
+
+            //document.cookie = `${CancionSelec}=${songLink}; max-age=86400; path=/`;
         });
     });
 }
