@@ -22,9 +22,9 @@
                         </button>
                     </form>
                 </div>
-                <a href="../Templates/Perfil.html" id="headerUser">
-                    <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
-                </a>
+                  <a href="../Templates/Perfil.html" class="mainT" id="headerUser">
+                    <img id="avatar" alt="userIcon">
+                  </a>
             </nav>
         </header>
         <div class="cent">
@@ -54,31 +54,21 @@
     <main class="main">
         <section id="mainSection">
             <article id="myPlaylists">
-                <div class="mainTitle" id="myPlaylists">Mis <br> Playlists</div>
-                <div id="grid">
-                    <div class="mainElement">a</div>
-                    <div class="mainElement">a</div>
-                    <div class="mainElement">a</div>
-                </div>
+                <div class="mainT" id="myPlaylists">Mis <br> Playlists</div>
+                <div id="playlists"></div>
             </article>
             <article>
-                <img src="../Statics/img/Ranita.png" alt="mainFig" id="ranita2">
-                <div id="centerDiv" onclick="window.location.href='nuevaPlaylist.html'">Crear Playlist</div>
+                <img id="avatarGrande"alt="mainFig">
+                <div id="btnNuevaPlaylist" class="mainT" onclick="window.location.href='nuevaPlaylist.html'">Crear Playlist</div>
             </article>
             <article id="recSongs">
-                <div class="mainTitle" id="recSongs">Canciones que te recomendamos</div>
-                <div id="grid2">
-                    <div class="mainElement">a</div>
-                    <img src="../Statics/img/songPlus.png" alt="+">
-                    <div class="mainElement">a</div>
-                    <img src="../Statics/img/songPlus.png" alt="+">
-                    <div class="mainElement">a</div>
-                    <img src="../Statics/img/songPlus.png" alt="+">
-              </div>
+                <div class="mainT" id="recSongs">Canciones que te recomendamos</div>
+                <div id="cancionesRecomendadas"></div>
             </article>
         </section>
     
     </main>
     <script src="../Dynamics/buscador.js"></script>
+    <script src="../Dynamics/cargarPerfil.js"></script>
 </body>
 </html>
