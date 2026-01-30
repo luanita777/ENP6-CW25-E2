@@ -11,44 +11,44 @@
 </header>
 <body>
 
-    <div class="cent">
-        <section id="conte">
+  <div class="cent">
+    <h1>Crear mi cuenta</h1>
+      <section id="conte">
             <form id="Crear-una-cuenta">
                 <label for="nomusernew">Escoje un nombre de usuario (No uses tu nombre real)</label>
                 <input type="text" id="nomusernew" name="nomusernew">
 
-                <br><p id="err1"></p><br>
+                <br><p class="errores" id="err1"></p><br>
 
                 <label for="pass"> Crea una contraseña para tu cuenta </label>
                 <input type="text" id="password" name="password">
 
-                <br><p id="err2"></p><br>
+                <br><p class="errores" id="err2"></p><br>
 
                 <label for="fav1"> Quien es tu artista favorito?</label>
                 <input type="text" id="fav1" name="fav1">
 
-                <br><p id="err3"></p><br>
+                <br><p class="errores" id="err3"></p><br>
 
                 <label for="fav2"> Cual es tu cancion favorita? </label>
                 <input type="text" id="fav2" name="fav2">
 
-                <br><p id="er4"></p><br>
+                <br><p class="errores" id="er4"></p><br>
 
                 <label for="desc"> Agrega una breve descripcion sobre ti </label>
                 <input type="text" id="desc" name="desc">
 
-                <br><p id="err5"></p><br>
+                <br><p class="errores" id="err5"></p><br>
 
-                <button type="submit" id="iniciemos" class="botonescuenta">Crear Una cuenta</button>
+                <button type="submit" id="iniciemos" class="botonescuenta">Siguiente</button>
             </form>
         </section>
     </div>
 
-    <h1 id="a1"> Cuéntanos sobre ti </h1>
+    <div class="cent" id="bioForm">
+       <h2 id="a1"> Cuéntanos sobre ti </h2>
 
-    <p id="a2"> Responde esta breve encuesta y descubre qué animal de Yolcame eres !!</p>
-    <br>
-    <div class="cent">
+    <p id="a2">¡¡  Responde esta breve encuesta y descubre qué animal de Yolcame eres !!</p>
         <form id="bioform">
 
             <label for="pre1" class="preguntainit"> ¿En cuál de estos entornos te sientes mas cómodo? </label>
@@ -59,7 +59,7 @@
                 <option value="4">En la comodidad de mi hogar, rodeado de tecnología</option>
             </select>
 
-            <br><p id="err6"></p><br>
+            <br><p class="errores" id="err6"></p><br>
 
             <label for="pre2" class="preguntainit"> ¿A dónde preferirías salir con tus amigos? </label>
             <select name="pre2" id="pre2" class="preguntainit">
@@ -69,7 +69,7 @@
                 <option value="4">Salgamos al centro comercial y demos un paseo por el parque</option>
             </select>
 
-            <br><p id="err7"></p><br>
+            <br><p class="errores" id="err7"></p><br>
 
             <label for="pre3" class="preguntainit"> ¿Cuál es tu compañero de cuarto ideal? </label>
             <select name="pre3" id="pre3" class="preguntainit">
@@ -79,7 +79,7 @@
                 <option value="4">Un Hurón fan de los 80</option>
             </select>
 
-            <br><p id="err8"></p><br>
+            <br><p class="errores" id="err8"></p><br>
 
             <label for="pre4" class="preguntainit"> ¿Cuándo escuchas música buscas...? </label>
             <select name="pre4" id="pre4" class="preguntainit">
@@ -89,7 +89,7 @@
                 <option value="4">Recordar aquella noche de antro...</option>
             </select>
             
-            <br><p id="err9"></p><br>
+            <br><p class="errores" id="err9"></p><br>
 
             <label for="pre5" class="preguntainit"> ¿Qué vibra da la musica que escuhas? </label>
             <select name="pre5" id="pre5" class="preguntainit">
@@ -99,7 +99,7 @@
                 <option value="4">El "beat" de las mejores canciones de reggaeton</option>
             </select>
 
-            <br><p id="err10"></p><br>
+            <br><p class="errores" id="err10"></p><br>
 
             <label for="pre6" class="preguntainit"> ¿Cuál es tu género musical preferido? </label>
             <select name="pre6" id="pre6" class="preguntainit">
@@ -109,7 +109,7 @@
                 <option value="4">El género úrbano y el rap son para mi</option>
             </select>
 
-            <br><p id="err11"></p><br>
+            <br><p class="errores" id="err11"></p><br>
 
             <label for="pre7" class="preguntainit"> ¿Cuándo tengo un problema yo... </label>
             <select name="pre7" id="pre7" class="preguntainit">
@@ -119,7 +119,7 @@
                 <option value="4">Busco la forma mas rapida de arreglarlo aunque no sea lo mejor</option>
             </select>
 
-            <br><p id="err12"></p><br>
+            <br><p  class="errores" id="err12"></p><br>
 
             <label for="pre8" class="preguntainit"> ¿Cuál es tu profesión ideal? </label>
             <select name="pre8" id="pre8" class="preguntainit">
@@ -129,7 +129,7 @@
                 <option value="4">Dueño de una empresa supermalvada</option>
             </select>
 
-            <br><p id="err13"></p><br>
+            <br><p class="errores" id="err13"></p><br>
 
             <label for="pre9" class="preguntainit"> ¿Cómo te describen tus amigos? </label>
             <select name="pre9" id="pre9" class="preguntainit">
@@ -139,16 +139,17 @@
                 <option value="4">El qué siempre llega tarde pero anima a todos cuando llega</option>
             </select>
 
-            <br><p id="err14"></p>
+            <br><p class="errores" id="err14"></p>
 
-            <input type="submit">
-            
+           <button type="submit" id="btnBio" class="botonescuenta">Siguiente</button>
+
 
             <br><br>
 
         </form>
-
-        <form id="animalform">
+    </div>
+    <div class="cent" id="animalForm">
+        <form class="cent" id="animalform">
             <label for="ply" class="ply"> ¿Cuál es tu actividad favorita? </label>
             <select name="ply" id="ply" class="ply">
                 <option value="Cangrejo">Pellizcar a alguien con mis pinzas...</option>
@@ -157,7 +158,7 @@
                 <option value="Pulpo">Hacer bromas cuándo soy invisible</option>
             </select>
 
-            <br><p id="err15"></p><br>
+            <br><p class="errores" id="err15"></p><br>
 
             <label for="bsq" class="bsq"> ¿Cuál de estas caracteristicas te define? </label>
             <select name="bsq" id="bsq" class="bsq">
@@ -167,7 +168,7 @@
                 <option value="Zorro">"Soy mas rapido que cualquier conejito"</option>
             </select>
 
-            <br><p id="err16"></p><br>
+            <br><p class="errores"  id="err16"></p><br>
 
             <label for="slv" class="slv"> ¿Cual de estos podria ser tu hobbie? </label>
             <select name="slv" id="slv" class="slv">
@@ -177,7 +178,7 @@
                 <option value="Rana">"Hacer pierna en el gimnasio todos los dias"</option>
             </select>
 
-            <br><p id="err17"></p><br>
+            <br><p class="errores" id="err17"></p><br>
 
             <label for="cdd" class="cdd"> ¿Que buscas en otras personas? </label>
             <select name="cdd" id="cdd" class="cdd">
@@ -187,19 +188,20 @@
                 <option value="Colibri">"Que sean muy abiertas y libres"</option>
             </select>
 
-            <br><p id="err18"></p>
+            <br><p class="errores" id="err18"></p>
 
-            <input type="submit">
+	    <button class="botonescuenta" id="next">Crear mi cuenta</button>
 
         </form>
     </div>
 
     <div class="cent">
-        <div id="resultado">
-            <p id="result"></p>
+      <div id="resultado">
+	<h3>Cuenta creada con éxito</h3>
+            <h4 id="result"></h4>
             <img src="" id="imganiml">
-            <p id="resultani"></p>
-            <button class="botonescuenta" id="next">Siguiente</button>
+            <h4 id="resultani"></h4>
+            <button class="botonescuenta" id="crearCuenta">Regresar a inicio</button>
         </div>
     </div>
 
