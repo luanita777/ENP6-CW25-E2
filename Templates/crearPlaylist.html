@@ -62,11 +62,27 @@
         </article>
         <article id="contain">
             <div class="estilob" id="agregarC">
-            <button class="tipog" id="addSong">Agregar canciones</button>
+                <div id="player"></div>
+                <div id="player"></div>
+                <nav id="barraInfe">
+                    <input type="range" min="0" max="100" name="volume" id="volumeSlider">
+                    <button type="text" id="muteBtn"></button> 
+                    <button class="botones" id="cancionA">cancion</button>
+                    <button class="botones" id="noRepetir">noRepetir</button>
+                    <button class="botones" id="anterior">Anterior</button>
+                    <button class="botones" id="playPauseBtn">pausa</button>
+                    <button class="botones" id="siguiente">siguiente</button>
+                    <button class="botones" id="aleatorio">aleatorio</button>
+                    <button class="botones" id="cola">cola</button>
+                    <input type="range" min="0" max="100" name="volume" id="seekBar">
+                </nav>
+                <button class="tipog" id="addSong">Agregar canciones</button>
             </div>
             <div id="lista"></div>
         </article>
     </main>
+    <script src="https://youtube.com/iframe_api"></script>
+    <script src="../Dynamics/elementals.js"></script>
     <script src="../Dynamics/playlistView.js"></script>
     <script src="../Dynamics/buscadorPlaylist.js"></script>
     

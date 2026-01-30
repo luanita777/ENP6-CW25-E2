@@ -1,4 +1,4 @@
-#portada{
+#portadaplay{
     width: 30rem;
     height: 30rem;
     background-color: black;
@@ -6,15 +6,17 @@
 }
 #album {
     display: flex;
-    width: 25rem;
-    padding: 1rem;
+    width: 20rem;
+    padding: 0.5rem;
     flex-direction: column;
-    align-items: center;
+    align-items: top;
     color: #ffffff;
 }
 
 .tipog{
-    background-color: #166947aa;
+    background-color: rgb(48, 75, 211);
+    color: #ffffff;
+    height: 2rem;
 }
 
 #lista {
@@ -22,17 +24,18 @@
     margin-left: auto;
     padding: 0 5rem;
     flex-direction: column;
-    background-color: #166947aa;
+    background-color: #244a3a44;
 }
 
 #agregarC{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
 }
 
 #listaRepro{
     display:flex;
-    margin: 8rem 0 0 4rem;
+    margin: 12rem 0 0 8rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -51,9 +54,13 @@
     padding: 4px;
     font-size: 22px;
     text-decoration: none;
+    background-color: rgb(48, 75, 211);
     color: rgb(255, 255, 255);
 }
 
 .delete{
     margin-left: auto;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
 }
