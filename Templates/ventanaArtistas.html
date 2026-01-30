@@ -16,15 +16,15 @@
             <nav id="headerNav">
                 <div class="songSearch">
                     <form>
-                        <input type="bsq" id="bsq" name="bsq">
+                        <input type="text" id="bsq" name="bsq">
                         <button type="submit" id="submitSearch">
                             <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
                         </button>
                     </form>
                 </div>
-                <a href="" id="headerUser">
-                    <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
-                </a>
+                  <a href="../Templates/Perfil.html" class="mainT" id="headerUser">
+                    <img id="avatar" alt="userIcon" style="margin-bottom:.2rem; max-width:2.5rem; height:auto">
+                  </a>
             </nav>
         </header>
         <div class="cent">
@@ -60,6 +60,7 @@
 </body>
 
 <script src = "../Dynamics/JS/ventanaArtistas.js"></script>
+<script src="../Dynamics/cargarPerfil.js"></script>
 <link rel = "stylesheet" href = "../Statics/styles/ventanaArtistas1.css">
 
 </html>

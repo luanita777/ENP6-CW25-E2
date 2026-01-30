@@ -9,20 +9,20 @@
 </head>
 <body>
     <section id="grad">
-        <header class="header">
-            <a href="../Templates/inicio.html" class="navBar" id="site">Yolcame Miusic</a>
+         <header class="header">
+            <a href="./Templates/inicio.html" class="navBar" id="site">Yolcame Miusic</a>
             <nav id="headerNav">
                 <div class="songSearch">
                     <form>
-                        <input type="search" id="search" name="search">
+                        <input type="text" id="bsq" name="bsq">
                         <button type="submit" id="submitSearch">
                             <img src="../Statics/img/search.svg" alt="searchIcon" id="searchIcon">
                         </button>
                     </form>
                 </div>
-                <a href="../Templates/Perfil.html" id="headerUser">
-                    <img src="../Statics/img/Ranita.png" alt="userIcon" id="froggy">
-                </a>
+                  <a href="../Templates/Perfil.html" class="mainT" id="headerUser">
+                    <img id="avatar" alt="userIcon" style="margin-bottom:.2rem; max-width:2.5rem; height:auto">
+                  </a>
             </nav>
         </header>
         <nav class="topBarNav">
@@ -44,9 +44,10 @@
         </nav>
     </section>
     <main class="main">
-        <div class="mainTitle" id="recSongs">Mis Playlists</div>
+        <div class="mainT" id="recSongs">Mis Playlists</div>
         <section id="mainSection">
         </section>
     </main>
     <script src="../Dynamics/misplaylist.js"></script>
+    <script src="../Dynamics/cargarPerfil.js"></script>
 </html>
