@@ -18,6 +18,10 @@
     
 }
 
+.errores{
+    color: red;
+}
+
 #holder{
     background-color: rgb(161, 212, 219);
     display: flex;
@@ -40,9 +44,9 @@
 }
 
 #conte{
-    display: none;
+    display: flex;
     height: inherit;
-    width: 500px;
+    width: 400px;
     background-color: rgb(161, 212, 219);
     padding: 35px;
     border: 5px solid rgb(119, 171, 177);
@@ -52,12 +56,13 @@
 #animalform{
     display: none;
     height: inherit;
-    width: 500px;
+    width: 300px;
     background-color: rgb(161, 212, 219);
     padding: 35px;
     border: 5px solid rgb(119, 171, 177);
     border-radius: 10px;
 }
+
 
 @font-face {
     font-family: Bree_serif;
@@ -65,14 +70,16 @@
 }
 
 #bioform{
+    display: none;
+    flex-direction: column;
     height: inherit;
     width: 500px;
     background-color: rgb(161, 212, 219);
     padding: 35px;
     border: 5px solid rgb(119, 171, 177);
     border-radius: 10px;
-    justify-content: space-around;
 }
+
 
 body{
     font-family: Bree_serif;
@@ -83,6 +90,7 @@ body{
 
 .cent{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -98,3 +106,11 @@ body{
     border: 5px solid rgb(119, 171, 177);
     border-radius: 10px;
 }
+
+form{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+

@@ -9,12 +9,14 @@ a{
 #inicio-de-sesion{
     display: none;
     width: 500px;
-    height: 350px;
+    height: 300px;
     background-color: rgb(161, 232, 188);
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding: 10%;
+    align-self: center;
+    margin: 3%;
+    padding: 5%;
     border: 10px solid rgb(125, 180, 146);
     border-radius: 10px;
 }
@@ -34,15 +36,30 @@ a{
 
 }
 
+
 .botonescuenta{
     width: 180px;
     height: 50px;
     font-size: 15px;
     background-color: rgb(119, 171, 177);
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border: 5px solid rgb(93, 134, 138);
     border-radius: 10px;
+}
 
+.botonescuenta:hover{
+    width: 180px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(80, 160, 180);
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    border: 5px solid rgb(70, 134, 138);
+    border-radius: 10px;
 }
 
 .hide1{
@@ -91,6 +108,7 @@ a{
     height: 70px;
 }
 
+
 #imgini{
     position: relative;
     height: 100%;
@@ -115,6 +133,12 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 2%;
+    border-radius: 15px;
+}
+
+.errores{
+    color: red;
 }
 
 .cent{
